@@ -46,9 +46,9 @@ public class GameView extends UserView {
     protected void paintForeground(Graphics2D g) {
         // code to display the current score
         // total number of oranges collected by the bird
-        g.drawString("Number of Orange = " + bird.getOrangeCount(), 30, 15);
+        g.drawString("No. Oranges = " + bird.getOrangeCount(), 30, 15);
         // total number of oranges collected by the bird
-        g.drawString("Number of Acorn = " + squirrel.getAcornCount(), 30, 30);
+        g.drawString("No. Acorns = " + squirrel.getAcornCount(), 30, 30);
     }
 
 
