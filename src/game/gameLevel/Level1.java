@@ -15,8 +15,8 @@ import java.io.IOException;
  */
 public class Level1 extends GameLevel {
 
-    private static final int NUM_ORANGES = 5;
-
+    public static final int NUM_ORANGES = 5;
+    public static final int NUM_ACORNS = 0;
     /**
      * Populate the world.
      */
@@ -51,8 +51,7 @@ public class Level1 extends GameLevel {
 
     @Override
     public boolean isCompleted() {
-        return getBird().getOrangeCount() >= NUM_ORANGES;
+        return getBird().getOrangeCount() >= NUM_ORANGES && getSquirrel().getAcornCount() >= NUM_ACORNS;
     }
-    
-    
+
 }

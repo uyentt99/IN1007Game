@@ -47,7 +47,7 @@ public class Game {
         setBackgroundMusic("data/sound/bg_music_l1.wav");
         world.Initialize(this);
 
-        view = new GameView(world, world.getBird(), 500, 500);
+        view = new GameView(world, world.getBird(), world.getSquirrel(), 500, 500);
 
         // The view frame called "A Java Game"
         final JFrame frame = new JFrame("A Java Game");
@@ -143,8 +143,7 @@ public class Game {
             squirrelController.setBody(world.getSquirrel());
             world.getBird().setOrangeCount(oldBird.getOrangeCount());
             // show the new world in the view
-            view.setWorld(world);
-            view.setBird(world.getBird());
+            view.setNewLevel(world, world.getBird(), world.getSquirrel());
             world.start();
         }
     }

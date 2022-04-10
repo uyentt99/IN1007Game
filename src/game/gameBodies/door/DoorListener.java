@@ -23,7 +23,7 @@ public class DoorListener implements CollisionListener {
         Squirrel player2 = game.getPlayer2();
 
         // Go to next level if player get the door and current level completed
-        if (e.getOtherBody() == player || e.getOtherBody() == player2 && game.isCurrentLevelCompleted()) {
+        if ((e.getOtherBody() == player || e.getOtherBody() == player2) && game.isCurrentLevelCompleted()) {
             System.out.println("Going to level " + game.getNextLevel());
             game.goNextLevel();
         }

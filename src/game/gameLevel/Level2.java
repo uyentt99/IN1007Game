@@ -14,8 +14,8 @@ import org.jbox2d.common.Vec2;
  */
 public class Level2 extends GameLevel {
 
-    private static final int NUM_ORANGES = 7;
-    private static final int NUM_ACORNS = 3;
+    public static final int NUM_ORANGES = 7;
+    public static final int NUM_ACORNS = 3;
     
     /**
      * Populate the world.
@@ -58,7 +58,8 @@ public class Level2 extends GameLevel {
 
     @Override
     public boolean isCompleted() {
-        return getBird().getOrangeCount() >= NUM_ORANGES;
+        return getBird().getOrangeCount() >= (NUM_ORANGES + Level1.NUM_ORANGES)
+                && getSquirrel().getAcornCount() >= (NUM_ACORNS +Level1.NUM_ACORNS);
     }
     
     

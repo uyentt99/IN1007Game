@@ -19,8 +19,6 @@ public class BirdPickup implements CollisionListener {
            bird.incrementOrangeCount();
            e.getReportingBody().destroy();
        }
-
-
     }
     
 }
