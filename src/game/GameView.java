@@ -34,7 +34,12 @@ public class GameView extends UserView {
     
     @Override
     protected void paintBackground(Graphics2D g) {
+
         g.drawImage(background, 0, 0, this);
+        // display instruction
+        g.drawString("Bird: press W/A/D to move", 300,15);
+        g.drawString("Squirrel: press up/left/right arrow", 300,30);
+        g.drawString("Mission: Collect oranges and acorns", 300, 45);
     }
 
     @Override
