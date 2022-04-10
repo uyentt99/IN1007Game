@@ -2,11 +2,12 @@ package game.gameBodies.squirrel;
 
 
 import city.cs.engine.*;
+import game.gameBodies.Foods;
 
 /**
  * Squirrel Food is An acorn.
  */
-public class SquirrelFood extends DynamicBody {
+public class SquirrelFood extends Foods {
     private static final Shape shape = new PolygonShape
         (0.292f,-0.044f, -0.067f,-0.374f, -0.316f,0.158f, 0.06f,0.493f);
     

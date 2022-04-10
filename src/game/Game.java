@@ -94,10 +94,12 @@ public class Game {
     
     public void pause() {
         world.stop();
+        backgroundMusic.pause();
     }
-    
+
     public void restart() {
         world.start();
+        backgroundMusic.resume();
     }
     
     
